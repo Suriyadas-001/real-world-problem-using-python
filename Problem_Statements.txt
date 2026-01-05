@@ -1,0 +1,29 @@
+1. Employee Management System
+Create a Python program that uses a nested dictionary to store details of multiple employees, where each employee record contains the employee’s name, department, age, salary, and performance rating on a scale of 1 to 5. Write separate functions to process this data such that the salary of each employee is increased based on performance, giving a 20 percent salary hike to employees whose rating is 4 or above, a 10 percent hike to employees with a rating of 3, and no hike to employees whose rating is below 3. The program should also print employee details department-wise, identify and display the highest-paid employee, and remove all employees whose age is greater than 60 from the records.
+
+2. Student Result Processing System
+Design a Python program using a dictionary to store student information, where each student has a name and marks obtained in five subjects. Write functions to calculate the total and average marks of each student and assign grades based on the average marks, such as grade A, B, C, or Fail. The program should identify and display toppers whose average marks are 85 or above, print the names of students who have failed in any subject, and finally sort and display students in descending order of average marks without using the built-in sort function.
+
+3. Library Book Management System
+Create a Python program that maintains library book records using a dictionary, where each book has a book ID, title, author name, number of copies available, and the number of times the book has been issued. Write functions to issue a book by reducing the available copies, return a book by increasing the available copies, display all books that are currently out of stock, identify and print the most frequently issued book, and list all books written by a specific author.
+
+4. Bank Account Transaction System
+Develop a Python program using dictionaries to store bank customer details, including account number, customer name, current balance, and transaction history stored as a list. Write functions to deposit and withdraw money while ensuring that withdrawals are not allowed if the account balance is insufficient. The program should also print a mini statement showing the last five transactions, identify customers whose balance is below ₹1000, and apply annual interest to all customer accounts.
+
+5. Online Shopping Cart System
+Write a Python program that simulates an online shopping system using dictionaries. The product catalog should store product name, price, and available stock quantity. Another dictionary should be used as a shopping cart. Write functions to add items to the cart, remove items from the cart, calculate the total bill amount, apply a 10 percent discount if the total bill exceeds ₹5000 and a 20 percent discount if it exceeds ₹10000, and finally update the product stock after a successful purchase.
+
+6. Hospital Patient Record System
+Create a Python program that manages hospital patient records using nested dictionaries, where each patient record contains patient ID, name, age, disease, number of days admitted, and bill amount. Write functions to calculate the hospital bill based on the number of days admitted, identify and display critical patients who have been admitted for more than 10 days, print patient details disease-wise, remove patients who have been discharged, and find the patient with the highest hospital bill.
+
+7. Inventory Management System
+Design a Python inventory management program using dictionaries where each item has an item name, category, price, and quantity available. Write functions to increase the price of all electronic items by 15 percent, remove items whose quantity is zero, display inventory items category-wise, identify and print the most expensive item in the inventory, and calculate the total value of all items present in the inventory.
+
+8. Voting System Simulation
+Create a Python program that simulates a voting system using dictionaries to store candidate details such as name, party, and vote count. Write functions to cast votes while preventing duplicate voting by maintaining a voter ID list, display the total votes received by each candidate, declare the election winner, handle tie situations appropriately, and calculate and display the vote percentage obtained by each candidate.
+
+9. Hotel Room Booking System
+Develop a Python program to manage hotel room bookings using a dictionary that stores room number, room type, price per day, and availability status. Write functions to book a room, cancel a booking, calculate the total bill based on the number of days stayed, display all available rooms, and determine which room type has generated the highest total revenue.
+
+10. Exam Question Evaluation System
+Create a Python program that evaluates exam answers using a dictionary to store student details, including a list of answers, total marks, and result status. Write functions to compare each student’s answers with the answer key, calculate marks based on correct answers, assign pass or fail status, identify the highest and lowest scoring students, and finally print a complete result summary for all students.
