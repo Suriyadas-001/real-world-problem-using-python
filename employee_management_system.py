@@ -48,6 +48,45 @@ def increased_salary():
             emp_details['salary'] += (emp_details['salary']*20)/100
         elif emp_details['performance_rate'] <4 and emp_details['performance_rate'] >= 3:
             emp_details['salary'] += (emp_details['salary']*10)/100
-print(emp_data)
-increased_salary()
-print(emp_data)
+
+# The program should also print employee details department-wise
+def details_of_emp_dept_wise():
+    data = arrange_data_dept_wise()
+    print("Details of Employees depertment wise\n")
+    for dept in data:
+        print(f"................{dept}.................\n")
+        for emp_id,emp_details in data[dept]:
+            print(f"Emp id {emp_id}")
+            print(f"Emp name {emp_details['name']}")
+            print(f"Emp dept {emp_details['dept']}")
+            print(f"Emp age {emp_details['age']}")
+            print(f"Emp salary {emp_details['salary']}")
+            print(f"Emp performance_rate {emp_details['performance_rate']}\n")
+
+# arrange the data depertment-wise
+def arrange_data_dept_wise():
+    emp_dept = {}
+    for emp_id,emp_details in emp_data.items():
+        dept = emp_details['dept']
+        if dept not in emp_dept.keys():
+            emp_dept[dept] = []
+        emp_dept[dept].append((emp_id,emp_details))
+    return emp_dept
+# highest paid employee -this code is written by gpt
+def highest_paid_emp():
+    # Find the employee with the maximum salary
+    highest_emp_id = max(emp_data, key=lambda eid: emp_data[eid]['salary'])
+    highest_emp = emp_data[highest_emp_id]
+    print("Highest Paid Employee Details:")
+    print(f"Emp id: {highest_emp_id}")
+    print(f"Emp name: {highest_emp['name']}")
+    print(f"Emp dept: {highest_emp['dept']}")
+    print(f"Emp age: {highest_emp['age']}")
+    print(f"Emp salary: {highest_emp['salary']}")
+    print(f"Emp performance_rate: {highest_emp['performance_rate']}\n")
+    
+if __name__=="__main__":
+    # increased_salary()
+    # details_of_emp_dept_wise()
+    highest_paid_emp()
+    
